@@ -1,0 +1,39 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'frmPrincipal'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object swt_bd: TSwitch
+    IsChecked = False
+    Position.X = 32.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 0
+    OnSwitch = swt_bdSwitch
+  end
+  object lblNome: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 465.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Nome'
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 112.000000000000000000
+    TabOrder = 2
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object qry_inner: TFDQuery
+    Connection = dm.Conn
+    Left = 32
+    Top = 248
+  end
+end
